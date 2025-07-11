@@ -1,88 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=PT+Sans+Narrow&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./assets/icon/iconball.png" type="image/png" />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <title>Major Arcana Divinator</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/icon/iconball.png" type="image/png">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <title>Major Arcana Divinator</title>
-</head>
+    <body>
+        <header>
+            <!-- Global header content will be inserted here -->
+        </header>
+        <main>
+            <section class="main-section">
+                <span class="instructions">
+                    <p id="firstLine">
+                        Please select a single-card or three-card Major Arcana
+                        spread below.
+                    </p>
+                    <br />
+                    <p id="secondLine">
+                        A single card will reveal daily insight, and three cards
+                        will reveal <br />
+                        insight into your past, present, and future.
+                    </p>
+                </span>
 
-<body>
-    <header>
-        WELCOME
-        <div>
-        <span class="headerSpan">
-                <div class="aboutTarotButtonDiv">
-                    <a href="./about-tarot/index.html">     
-                        <button id="aboutTarotButton">About Tarot</button>
+                <div id="one-or-three">
+                    <label>
+                        <input
+                            type="radio"
+                            name="oneOrThree"
+                            value="1"
+                            checked
+                        />
+                        <img src="./assets/card-back/card-back.png" alt="" />
+                    </label>
+                    <label>
+                        <input type="radio" name="oneOrThree" value="3" />
+                        <div>
+                            <img
+                                src="./assets/card-back/card-back.png"
+                                alt=""
+                            />
+                            <img
+                                src="./assets/card-back/card-back.png"
+                                alt=""
+                            />
+                            <img
+                                src="./assets/card-back/card-back.png"
+                                alt=""
+                            />
+                        </div>
+                    </label>
+                </div>
+                <div id="beginButtonDiv">
+                    <a href="./reading-room/index.html">
+                        <button id="beginButton">BEGIN</button>
                     </a>
                 </div>
-            </span>
-        <span class="header2Span">
-            <div class="bioButtonDiv">
-                <a href="./about-us/index.html">     
-                    <button id="aboutUsButton">About Us</button>
-                </a>
-            </div> 
+            </section>
+        </main>
+        <footer>
+            <div></div>
+        </footer>
 
-        </span>
-        <span class="header3Span">
-            <div class="recentCardButtonDiv">
-                <a href="./recent-cards/index.html">     
-                    <button id="recentCardsButton">Recent Cards</button>
-                </a>
-            </div>
-            </span>
-        </div>
-    </header>
-    <main>
-        <section class="main-section">
-            <span class="instructions">
-                <p id="firstLine">
-                    Please select a single-card or three-card Major Arcana spread below.
-                </p>
-                <br>
-                <p id="secondLine">
-                    A single card will reveal daily insight, and three cards will reveal <br> insight into your past, present, and future. 
-                </p>
-            </span>
-
-            <div id="one-or-three">
-                <label>
-                        <input type="radio" name="oneOrThree" value="1" checked >
-                        <img src="./assets/card-back/card-back.png" alt="">
-                        
-                </label>
-                <label>
-                        <input type="radio" name="oneOrThree" value="3">
-                        <div>
-                            <img src="./assets/card-back/card-back.png" alt="">
-                            <img src="./assets/card-back/card-back.png" alt="">
-                            <img src="./assets/card-back/card-back.png" alt="">
-                        </div>
-                </label>
-                
-            </div>
-            <div id="beginButtonDiv">
-            <a href="./reading-room/index.html">
-                <button id="beginButton">BEGIN</button>
-            </a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-        </div>
-    </footer>
-
-    <script type="module" src="./app.js"></script>
-</body>
-
+        <script type="module" src="./app.js"></script>
+    </body>
 </html>

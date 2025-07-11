@@ -1,5 +1,9 @@
 import { ONE_OR_THREE } from './utils/constants.js';
 import { setLocalStorage } from './utils/localStorage-utils.js';
+import { renderHeader } from './utils/header.js';
+
+// Initialize global header
+renderHeader();
 
 const beginButton = document.getElementById('beginButton');
 

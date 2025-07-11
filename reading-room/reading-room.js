@@ -2,6 +2,10 @@ import { cardStack } from '../utils/card-stack.js';
 import { clickHandler } from '../utils/clickHandler.js';
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { ONE_OR_THREE } from '../utils/constants.js';
+import { renderHeader } from '../utils/header.js';
+
+// Initialize global header
+renderHeader();
 
 const cardDesc = document.getElementById('card-desc');
 const refreshButton = document.querySelector('#refreshButton');

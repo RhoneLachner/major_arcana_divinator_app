@@ -43,9 +43,59 @@ main {
     background-color: rgb(17, 17, 17);
     margin-left: 10%;
     margin-right: 10%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 section {
     border: white none;
     margin-bottom: 40px;
+}
+
+/* Tablet styles - 768px to 1024px */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 15px;
+    }
+
+    h2 {
+        margin: 30px 20px;
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile styles - below 768px */
+@media screen and (max-width: 767px) {
+    main {
+        padding: 0 10px;
+    }
+
+    h2 {
+        margin: 20px 10px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    img {
+        width: 40%;
+        max-width: 200px;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
 }

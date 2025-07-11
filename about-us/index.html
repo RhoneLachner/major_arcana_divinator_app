@@ -20,20 +20,7 @@
     </head>
     <body>
         <header>
-            Meet the Team
-            <!-- navigation links -->
-            <!-- back to home -->
-            <div class="buttonDiv">
-                <span class="buttonSpan">
-                    <a href="../index.html">
-                        <button id="homeButton">Home</button>
-                    </a>
-
-                    <a href="../recent-cards/index.html">
-                        <button id="recentCardsButton">Recent Cards</button>
-                    </a>
-                </span>
-            </div>
+            <!-- Global header content will be inserted here -->
         </header>
         <main>
             <section class="main-section">
@@ -114,5 +101,10 @@
         <footer>
             <div></div>
         </footer>
+
+        <script type="module">
+            import { renderHeader } from '../utils/header.js';
+            renderHeader();
+        </script>
     </body>
 </html>

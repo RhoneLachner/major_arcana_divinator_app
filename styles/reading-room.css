@@ -1,10 +1,10 @@
 @font-face {
     font-family: Hill House;
-        src:url('../assets/font/Hill_House\ 2.otf')
+    src: url('../assets/font/Hill_House\ 2.otf');
 }
 
 body {
-    background-color:rgb(17, 17, 17);
+    background-color: rgb(17, 17, 17);
     color: white;
 }
 
@@ -14,6 +14,10 @@ main {
     color: white;
     margin-top: 15px;
     background-color: rgb(17, 17, 17);
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-section {
@@ -43,7 +47,8 @@ main {
     }
 }
 
-.description, .greet-user {
+.description,
+.greet-user {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -57,7 +62,8 @@ main {
 }
 
 .click-instruction p {
-    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
+        sans-serif;
     color: #bba391cb;
     font-size: 12px;
     margin: 0;
@@ -71,7 +77,8 @@ main {
 }
 
 #card-desc {
-    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
+        sans-serif;
     color: #bba391cb;
     font-size: 12px;
     margin-top: 15px;
@@ -84,7 +91,7 @@ main {
 }
 
 #refreshButton:hover {
-    background:#e4a77be5;
+    background: #e4a77be5;
     color: #ffffff;
     box-shadow: 0 0 15px #ffffff;
 }
@@ -94,4 +101,66 @@ footer {
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+
+/* Tablet styles - 768px to 1024px */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .card-back {
+        margin-left: 10px;
+        margin-bottom: -10px;
+    }
+
+    .description,
+    .greet-user {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile styles - below 768px */
+@media screen and (max-width: 767px) {
+    main {
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+
+    .main-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-back {
+        margin-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description,
+    .greet-user {
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .click-instruction p {
+        font-size: 11px;
+    }
+
+    #card-desc {
+        font-size: 11px;
+        margin-top: 15px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    footer {
+        height: 60px;
+        margin: 5px;
+    }
 }

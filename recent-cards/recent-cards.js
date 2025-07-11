@@ -1,8 +1,11 @@
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
-import { renderRecentCard } from '../utils/renderRecentCard.js'
+import { renderRecentCard } from '../utils/renderRecentCard.js';
+import { renderHeader } from '../utils/header.js';
 
-const clearButton = document.querySelector('.clear-button');
+// Initialize global header
+renderHeader();
+
 const paragraph = document.getElementById('message');
 const cardBack = document.querySelectorAll('.card-img')[1];
 
@@ -11,7 +14,7 @@ const recentCards = getLocalStorage(CARDS);
 
 if (recentCards <= [0]) {
     paragraph.textContent = 'You have no recent readings. Please navigate back to home.';
-} else { 
+} else {
 //loop to cut array down to 9 cards
     while (recentCards.length > 9) {
         recentCards.shift();
@@ -22,10 +25,3 @@ if (recentCards <= [0]) {
         renderRecentCard(oneRecentCard, cardBack);
     }
 }
-
-//button to clear local storage.
-clearButton.addEventListener('click', () => {
-    localStorage.clear();
-
-    window.location.reload();
-});
