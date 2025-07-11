@@ -1,8 +1,8 @@
 /*
 renderRecentCard takes a card object, and generates an HTML card with:
-a title (name), image, and an overlay div containing the card's keywords 
+a title (name), image, and an overlay div containing the card's keywords
 and indications as well as a timestamp on hover
-*/ 
+*/
 export function renderRecentCard(card) {
     const anchor = document.querySelector('section');
     const container = document.createElement('div');
@@ -14,7 +14,7 @@ export function renderRecentCard(card) {
     frontContainer.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
-    
+
     frontContainer.append(img, title);
     container.append(frontContainer);
 
@@ -31,7 +31,6 @@ export function renderRecentCard(card) {
     keywords.classList.add('keywords');
     interpretation.classList.add('interpretation');
     date.classList.add('timestamp');
-    date.classList.add('hide');
 
     keywords.textContent = card.keyWords;
     interpretation.textContent = card.interpretation;

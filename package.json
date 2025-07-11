@@ -1,0 +1,22 @@
+{
+    "name": "major-arcana-divinator",
+    "version": "1.0.0",
+    "description": "A tarot card divination app for Major Arcana readings",
+    "main": "app.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [
+        "tarot",
+        "divination",
+        "major-arcana",
+        "cards"
+    ],
+    "author": "RhoneLachner",
+    "license": "MIT",
+    "devDependencies": {
+        "vite": "^5.0.0"
+    }
+}

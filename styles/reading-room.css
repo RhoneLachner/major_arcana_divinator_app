@@ -5,7 +5,7 @@
 
 body {
     background-color:rgb(17, 17, 17);
-    color: white;  
+    color: white;
 }
 
 main {
@@ -50,11 +50,32 @@ main {
     color: darkgrey;
 }
 
+.click-instruction {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.click-instruction p {
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bba391cb;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.click-instruction p.fade-in {
+    opacity: 1;
+}
+
 #card-desc {
-    font-family: Hill House;
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bba391cb;
     font-size: 12px;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 #refreshButton {

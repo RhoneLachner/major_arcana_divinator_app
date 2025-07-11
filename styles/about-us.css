@@ -1,19 +1,21 @@
 @font-face {
     font-family: Hill House;
-        src:url('../assets/font/Hill_House\ 2.otf')
+    src: url('../assets/font/Hill_House\ 2.otf');
 }
 
 body {
-    background-color: rgb(17, 17, 17);;
+    background-color: rgb(17, 17, 17);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
 
 main {
-    background-color:rgb(17, 17, 17);
-    margin-left: 15%;
-    margin-right: 15%;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
 }
 
 section {
@@ -22,26 +24,164 @@ section {
 
 h3 {
     font-family: Hill House;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 p {
     font-family: 'Catamaran', sans-serif;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 13px;
-}
-
-img {
-    width: 25%; 
-}
-
-div {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center;
+    font-size: 12.5px;
+    line-height: 1.4;
 }
 
 footer {
     background-color: rgb(0, 0, 0);
+}
+
+/* Mobile styles (default) - below 768px */
+@media screen and (max-width: 767px) {
+    main {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .main-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .team-grid {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .team-member img {
+        display: none; /* Hide images on mobile */
+    }
+
+    .member-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .member-info h3 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .member-info p {
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop styles - 768px and above */
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-section {
+        margin-top: 80px;
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .team-grid {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        width: 20vw;
+        max-width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .team-member img {
+        width: 20vw;
+        height: auto;
+        max-width: 250px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+        margin-bottom: 1vh;
+    }
+
+    .team-member img:hover {
+        transform: scale(1.05);
+    }
+
+    .member-info {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        text-align: center;
+    }
+
+    .member-info h3 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .member-info p {
+        text-align: center;
+        line-height: 1.75;
+        font-size: 12.5px;
+    }
+}
+
+/* Tablet range - 768px to 1024px - smaller gap and image size */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .team-grid {
+        gap: 10px;
+    }
+
+    .team-member img {
+        width: 24vw;
+        height: auto;
+    }
+
+    .member-info {
+        width: 155px;
+    }
 }

@@ -1,12 +1,12 @@
 header {
     font-family: Hill House;
     color: rgb(255, 255, 255);
-    background-color:black;
+    background-color: black;
     text-align: center;
     font-size: 300%;
     font-weight: 600;
     padding-top: 2%;
-    text-decoration: underline;   
+    text-decoration: underline;
     width: 100%;
 }
 
@@ -24,19 +24,19 @@ header {
 }
 
 button:hover {
-    background:#e4a77be5;
+    background: #e4a77be5;
     color: #ffffff;
     box-shadow: 0 0 15px #ffffff;
 }
 
 button {
     background: #000000;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     color: white;
     width: max-content;
     float: right;
     font-family: Hill House;
-    border-style: hidden ;
+    border-style: hidden;
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
@@ -51,8 +51,8 @@ button {
 
 .card > img {
     border-radius: 12px;
-    height: 420px;
-    width: 240px;
+    height: 357px;
+    width: 204px;
 }
 
 .card > p {
@@ -62,7 +62,7 @@ button {
     align-items: center;
     font-family: Hill House;
     background-color: #040707;
-    width: 140px;
+    width: 119px;
     height: 35px;
     bottom: 5%;
     line-height: 100%;
@@ -76,7 +76,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 240px;
+    width: 204px;
 }
 
 .card-back {
@@ -104,11 +104,12 @@ button {
 
 .card-img {
     border-radius: 12px;
-    height: 420px;
-    width: 240px;
+    height: 357px;
+    width: 204px;
 }
 
-.card-img, .card > img {
+.card-img,
+.card > img {
     box-shadow: 1px 1px 5px black;
     border: 1px solid black;
     background-color: black;
@@ -122,14 +123,16 @@ button {
     font-family: 'Catamaran', sans-serif;
     font-weight: bolder;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .interpretation {
     font-family: 'Catamaran', sans-serif;
     font-weight: bolder;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .color-block {
@@ -137,12 +140,12 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 240px;
-    height: 420px;
+    width: 204px;
+    height: 357px;
     top: 0;
     opacity: 0;
     border-radius: 12px;
-    background-color: #bba3919f;
+    background-color: #bba391ca;
     transition: 0.5s ease-in-out;
     margin-bottom: 40px;
     margin: 10px;
@@ -150,6 +153,7 @@ button {
     box-shadow: 0 0 10px #ffffff6e;
 }
 
-.interpretation, .keywords {
+.interpretation,
+.keywords {
     margin: 20px;
 }
