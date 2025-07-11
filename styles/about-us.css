@@ -15,24 +15,24 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0;
+    margin-top: 80px;
 }
 
 section {
     border: white none;
 }
 
-h3 {
+.about-us-name-title {
     font-family: Hill House;
-    font-size: 1.5em;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-p {
+.about-us-text {
     font-family: 'Catamaran', sans-serif;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 12.5px;
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -136,9 +136,9 @@ footer {
     }
 
     .team-member img {
-        width: 20vw;
+        width: 18vw;
         height: auto;
-        max-width: 250px;
+        max-width: 200px;
         object-fit: cover;
         object-position: center;
         border-radius: 10px;
@@ -147,9 +147,9 @@ footer {
         margin-bottom: 1vh;
     }
 
-    .team-member img:hover {
+    /* .team-member img:hover {
         transform: scale(1.05);
-    }
+    } */
 
     .member-info {
         display: flex;
@@ -166,7 +166,6 @@ footer {
     .member-info p {
         text-align: center;
         line-height: 1.75;
-        font-size: 12.5px;
     }
 }
 
@@ -177,7 +176,7 @@ footer {
     }
 
     .team-member img {
-        width: 24vw;
+        width: 18vw;
         height: auto;
     }
 

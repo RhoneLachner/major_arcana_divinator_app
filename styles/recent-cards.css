@@ -15,7 +15,7 @@ body {
 
 main {
     background-color: rgb(17, 17, 17);
-    margin-top: 2%;
+    margin-top: 180px;
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -28,7 +28,6 @@ main {
 @media screen and (max-width: 1024px) {
     main {
         padding: 0 15px;
-        margin-top: 20px;
     }
 
     .main-section {
@@ -44,7 +43,6 @@ main {
 @media screen and (max-width: 767px) {
     main {
         padding: 0 10px;
-        margin-top: 15px;
     }
 
     .main-section {
@@ -98,12 +96,6 @@ main {
     position: static;
     text-align: center;
     font-size: 12px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Timestamp appears on card hover */
-.card-container:hover .timestamp {
     opacity: 1;
 }
 

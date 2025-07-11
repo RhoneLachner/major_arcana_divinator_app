@@ -5,9 +5,12 @@ export function timestampMaker() {
     const timestamp = new Date();
 
     const day = timestamp.toDateString();
-    const time = timestamp.toLocaleTimeString();
+    const time = timestamp.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+    });
 
-    const displayDate = `This reading occured on ${day}, ${time}.`;
+    const displayDate = `${day}, ${time}`;
 
     return displayDate;
 }

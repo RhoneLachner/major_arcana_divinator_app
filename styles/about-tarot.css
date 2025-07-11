@@ -3,17 +3,24 @@
     src: url('../assets/font/Hill_House\ 2.otf');
 }
 
-h2 {
-    font-family: hill house;
-    font-size: 1.3em;
-    margin: 40px;
+.tarot-info-title {
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
-p {
-    font-family: 'Catamaran', sans-serif;
-    text-align: justify;
+.tarot-info-text {
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;    text-align: justify;
     text-justify: inter-word;
-    font-size: 14px;
+    font-size: 12px;
+    max-width: 800px;
+    padding-bottom: 28px;
+    padding-top: 6px;
 }
 
 a:link {
@@ -30,8 +37,8 @@ a:visited {
 body {
     background-color: rgb(17, 17, 17);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: small; */
     text-align: center;
 }
 
@@ -41,53 +48,54 @@ img {
 
 main {
     background-color: rgb(17, 17, 17);
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 1200px;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
 }
 
-section {
+.main-about-tarot-section {
     border: white none;
     margin-bottom: 40px;
+    margin-top: 140px;
+    padding: 0 20vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 /* Tablet styles - 768px to 1024px */
 @media screen and (max-width: 1024px) {
-    main {
-        padding: 0 15px;
+
+    .main-about-tarot-section {
+        padding: 0 10vw;
+        margin-top: 140px;
     }
 
-    h2 {
-        margin: 30px 20px;
-        font-size: 1.2em;
+    .tarot-info-title {
+        padding-bottom: 12px;
     }
 
-    p {
-        font-size: 13px;
+    .tarot-info-text {
         line-height: 1.5;
+        max-width: 1200px;
     }
 }
 
 /* Mobile styles - below 768px */
 @media screen and (max-width: 767px) {
-    main {
-        padding: 0 10px;
+
+    .tarot-info-title {
+        padding-bottom: 45px;
     }
 
-    h2 {
-        margin: 20px 10px;
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-    p {
+    .tarot-info-text {
         font-size: 12px;
         line-height: 1.6;
         text-align: left;
-        padding: 0 5px;
     }
 
     img {
@@ -95,7 +103,4 @@ section {
         max-width: 200px;
     }
 
-    section {
-        margin-bottom: 30px;
-    }
 }

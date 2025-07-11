@@ -22,10 +22,9 @@ div {
     justify-content: center;
 }
 
-main {
+.home-main {
     background-color: rgb(17, 17, 17);
     background-image: url();
-    margin-top: 5vh;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -149,6 +148,9 @@ label div {
     label {
         margin: 0;
     }
+    .home-main-section {
+        margin-top: 80px;
+    }
 }
 
 /* Mobile styles - below 768px */
@@ -172,7 +174,7 @@ label div {
         gap: 3px;
     }
 
-    .main-section {
+    .home-main-section {
         width: 95%;
     }
 

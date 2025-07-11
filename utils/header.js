@@ -83,7 +83,9 @@ function generateButtonsHTML(page) {
                 <a href="${basePath}index.html">
                     <button>Home</button>
                 </a>
-                <button class="clear-button">Clear Saved Cards</button>
+                <a>
+                    <button class="clear-button">Clear Saved Cards</button>
+                </a>
             `;
 
         case 'reading-room':
