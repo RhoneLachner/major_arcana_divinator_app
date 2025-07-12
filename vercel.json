@@ -1,41 +1,30 @@
 {
-  "functions": {
-    "app.js": {
-      "maxDuration": 10
-    }
-  },
-  "headers": [
-    {
-      "source": "/assets/font/(.*)",
-      "headers": [
+    "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+            "source": "/assets/font/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Cross-Origin-Resource-Policy",
+                    "value": "cross-origin"
+                }
+            ]
         },
         {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Cross-Origin-Resource-Policy",
-          "value": "cross-origin"
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/assets/font/Hill_House%202.otf",
-      "destination": "/assets/font/Hill_House 2.otf"
-    }
-  ]
+    ]
 }
