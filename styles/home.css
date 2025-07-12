@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Hill House;
-    src: url('../assets/font/Hill_House\ 2.otf');
-}
+/* Font declaration moved to style.css to prevent conflicts */
 
 body {
     background-color: rgb(17, 17, 17);
@@ -62,7 +59,6 @@ input[type='radio']:checked + div > p {
     background-color: #e4a77b;
     /* feel free to change this color */
 }
-
 
 .begin-button {
     vertical-align: center;

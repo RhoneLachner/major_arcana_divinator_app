@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Hill House;
-    src: url('../assets/font/Hill_House\ 2.otf');
-}
+/* Font declaration moved to style.css to prevent conflicts */
 
 body {
     background-color: rgb(17, 17, 17);
@@ -23,7 +20,7 @@ section {
 }
 
 .about-us-name-title {
-    font-family: Hill House;
+    font-family: 'Hill House', Georgia, serif;
     font-size: 15px;
     margin-bottom: 10px;
 }
