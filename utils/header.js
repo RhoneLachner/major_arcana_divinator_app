@@ -71,7 +71,7 @@ function generateButtonsHTML(page) {
         case 'about-tarot':
             return `
                 <a href="${basePath}index.html">
-                    <button class="header-button">Home</buttonc>
+                    <button class="header-button">Home</button>
                 </a>
             `;
 
@@ -80,15 +80,15 @@ function generateButtonsHTML(page) {
                 <a href="${basePath}index.html">
                     <button class="header-button">Home</button>
                 </a>
-                <a>
-                    <button class="header-button" class="clear-button">Clear Saved Cards</button>
+                <a href="#" onclick="event.preventDefault();">
+                    <button class="header-button clear-button">Clear Saved Cards</button>
                 </a>
             `;
 
         case 'reading-room':
             return `
                 <a href="${basePath}index.html">
-                    <button>Home</button>
+                    <button class="header-button">Home</button>
                 </a>
                 <a href="${basePath}recent-cards/index.html">
                     <button class="header-button">Recent Cards</button>
@@ -116,4 +116,3 @@ function addButtonEventListeners(page) {
         }
     }
 }
-
