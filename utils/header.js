@@ -116,3 +116,4 @@ function addButtonEventListeners(page) {
         }
     }
 }
+
