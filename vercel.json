@@ -1,4 +1,22 @@
 {
+    "rewrites": [
+        {
+            "source": "/about-us/(.*)",
+            "destination": "/about-us/index.html"
+        },
+        {
+            "source": "/about-tarot/(.*)",
+            "destination": "/about-tarot/index.html"
+        },
+        {
+            "source": "/reading-room/(.*)",
+            "destination": "/reading-room/index.html"
+        },
+        {
+            "source": "/recent-cards/(.*)",
+            "destination": "/recent-cards/index.html"
+        }
+    ],
     "headers": [
         {
             "source": "/assets/font/(.*)",
