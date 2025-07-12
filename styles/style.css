@@ -7,7 +7,7 @@ header {
     font-weight: 600;
     padding-top: 24px;
     padding-bottom: 6px;
-    text-decoration: underline;
+    text-decoration: none;
     width: 100%;
     position: fixed;
     top: 0;
@@ -286,7 +286,7 @@ button:hover {
     .card-img {
         height: 250px;
         width: 143px;
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     .card > div {
@@ -296,7 +296,6 @@ button:hover {
     .color-block {
         width: 143px;
         height: 250px;
-        margin: 5px;
     }
 
     .card > p {

@@ -14,9 +14,9 @@ const clickText = document.getElementById('click-text');
 // Set the click instruction text based on reading type
 const readingType = getLocalStorage(ONE_OR_THREE);
 if (readingType === '1') {
-    clickText.textContent = 'click below to draw a card';
+    clickText.textContent = 'click the deck below to draw a card';
 } else if (readingType === '3') {
-    clickText.textContent = 'click below to draw your cards';
+    clickText.textContent = 'click the deck below to draw your cards';
 }
 
 // Trigger fade-in animation

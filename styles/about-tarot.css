@@ -5,7 +5,7 @@
 
 .tarot-info-title {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
-    sans-serif;
+        sans-serif;
     font-weight: 900;
     text-decoration: none;
     font-size: 16px;
@@ -15,7 +15,8 @@
 
 .tarot-info-text {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
-    sans-serif;    text-align: justify;
+        sans-serif;
+    text-align: justify;
     text-justify: inter-word;
     font-size: 12px;
     max-width: 800px;
@@ -25,13 +26,16 @@
 
 a:link {
     color: #e4a77b;
+    text-decoration: none;
 }
 a:hover {
     color: #e2d5cc;
+    text-decoration: none;
 }
 
 a:visited {
     color: bisque;
+    text-decoration: none;
 }
 
 body {
@@ -46,7 +50,7 @@ img {
     width: 25%;
 }
 
-main {
+.about-tarot-main {
     background-color: rgb(17, 17, 17);
     /* margin-left: 20%;
     margin-right: 20%; */
@@ -58,18 +62,16 @@ main {
 .main-about-tarot-section {
     border: white none;
     margin-bottom: 40px;
-    margin-top: 140px;
+    margin-top: 160px;
     padding: 0 20vw;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 /* Tablet styles - 768px to 1024px */
 @media screen and (max-width: 1024px) {
-
     .main-about-tarot-section {
         padding: 0 10vw;
         margin-top: 140px;
@@ -88,6 +90,10 @@ main {
 /* Mobile styles - below 768px */
 @media screen and (max-width: 767px) {
 
+    .main-about-tarot-section {
+        margin-top: 130px;
+    }
+    
     .tarot-info-title {
         padding-bottom: 45px;
     }
@@ -102,5 +108,4 @@ main {
         width: 40%;
         max-width: 200px;
     }
-
 }

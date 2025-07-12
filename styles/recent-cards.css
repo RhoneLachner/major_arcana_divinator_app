@@ -13,7 +13,12 @@ body {
     align-items: center;
 }
 
-main {
+.card, .card-container, .color-block, .card > img {
+    min-width: 204px;
+    min-height: 357px;
+}
+
+.recent-cards-main {
     background-color: rgb(17, 17, 17);
     margin-top: 180px;
     width: 100%;
@@ -26,7 +31,7 @@ main {
 
 /* Tablet styles - 768px to 1024px */
 @media screen and (max-width: 1024px) {
-    main {
+    .recent-cards-main {
         padding: 0 15px;
     }
 
@@ -34,14 +39,14 @@ main {
         gap: 20px;
     }
 
-    .card-container {
+    /* .card-container {
         margin-bottom: 25px;
-    }
+    } */
 }
 
 /* Mobile styles - below 768px */
 @media screen and (max-width: 767px) {
-    main {
+    .recent-cards-main {
         padding: 0 10px;
     }
 
@@ -51,10 +56,10 @@ main {
         gap: 15px;
     }
 
-    .card-container {
+    /* .card-container {
         margin-bottom: 20px;
         max-width: 100%;
-    }
+    } */
 
     .no-cards-message {
         padding-top: 20px;
@@ -80,7 +85,7 @@ main {
     align-items: center;
     width: auto;
     max-width: 350px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .timestamp {

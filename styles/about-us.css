@@ -10,7 +10,7 @@ body {
     font-size: small;
 }
 
-main {
+.about-us-main {
     background-color: rgb(17, 17, 17);
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ footer {
 
 /* Mobile styles (default) - below 768px */
 @media screen and (max-width: 767px) {
-    main {
+    .about-us-main {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -100,7 +100,7 @@ footer {
 
 /* Desktop styles - 768px and above */
 @media screen and (min-width: 768px) {
-    main {
+    .about-us-main {
         display: flex;
         justify-content: center;
         width: 100%;
