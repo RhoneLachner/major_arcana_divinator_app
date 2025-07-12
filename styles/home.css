@@ -24,6 +24,7 @@ div {
     justify-content: center;
     width: 100%;
     padding-top: 210px; /* Account for desktop header height */
+    padding-bottom: 40px;
 }
 
 /* section {
@@ -134,7 +135,6 @@ label div {
 
 /* Tablet styles - 768px to 1024px */
 @media screen and (max-width: 1024px) {
-
     #secondLine {
         padding-left: 20%;
         padding-right: 20%;
@@ -142,6 +142,7 @@ label div {
 
     .home-main {
         padding-top: 180px; /* Account for desktop header height */
+        padding-bottom: 40px;
     }
 
     #one-or-three {
@@ -163,6 +164,7 @@ label div {
 @media screen and (max-width: 767px) {
     .home-main {
         padding-top: 180px; /* Account for desktop header height */
+        padding-bottom: 40px;
     }
 
     #one-or-three {
@@ -194,7 +196,7 @@ label div {
     }
 
     #secondLine {
-        font-size: .88rem; /* Increased from 10p
+        font-size: 0.88rem; /* Increased from 10p
         x */
         padding-left: 10%;
         padding-right: 10%;
