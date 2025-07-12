@@ -161,8 +161,8 @@ button:hover {
 
 .card > img {
     border-radius: 12px;
-    height: 357px;
-    width: 204px;
+    height: 390px; /* Increased from 357px */
+    width: 225px; /* Increased from 204px */
 }
 
 .card > p {
@@ -171,8 +171,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: #040707;
-    width: 119px;
-    height: 35px;
+    width: 130px; /* Increased from 119px */
+    height: 38px; /* Increased from 35px */
     bottom: 5%;
     line-height: 100%;
     margin-left: auto;
@@ -185,7 +185,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 204px;
+    width: 225px; /* Increased from 204px */
 }
 
 .card-back {
@@ -213,8 +213,8 @@ button:hover {
 
 .card-img {
     border-radius: 12px;
-    height: 357px;
-    width: 204px;
+    height: 390px; /* Increased from 357px */
+    width: 225px; /* Increased from 204px */
 }
 
 .card-img,
@@ -242,8 +242,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 204px;
-    height: 357px;
+    width: 225px; /* Increased from 204px */
+    height: 390px; /* Increased from 357px */
     top: 0;
     opacity: 0;
     border-radius: 12px;
@@ -265,16 +265,16 @@ button:hover {
     .card > img,
     .card-img,
     .color-block {
-        width: 180px;
-        height: 320px;
+        width: 200px; /* Increased from 180px */
+        height: 350px; /* Increased from 320px */
     }
 
     .card > div {
-        width: 171px;
+        width: 190px; /* Increased from 171px */
     }
 
     .card > p {
-        width: 100px;
+        width: 115px; /* Increased from 100px */
     }
     .keywords,
     .interpretation {
@@ -290,13 +290,13 @@ button:hover {
     .card > img,
     .card-img,
     .color-block {
-        height: 300px;
-        width: 171px;
+        height: 330px; /* Increased from 300px */
+        width: 190px; /* Increased from 171px */
         /* margin: 5px; */
     }
 
     .card > div {
-        width: 143px;
+        width: 160px; /* Increased from 143px */
     }
 }
 
@@ -305,13 +305,13 @@ button:hover {
     .card > img,
     .card-img,
     .color-block {
-        height: 300px;
-        width: 171px;
+        height: 330px; /* Increased from 300px */
+        width: 190px; /* Increased from 171px */
         /* margin: 5px; */
     }
 
     .card > div {
-        width: 143px;
+        width: 160px; /* Increased from 143px */
     }
     /*
     .color-block {
@@ -320,14 +320,14 @@ button:hover {
     } */
 
     .card > p {
-        width: 85px;
+        width: 95px; /* Increased from 85px */
         font-size: 11px;
-        height: 30px;
+        height: 32px; /* Increased from 30px */
     }
 
     .interpretation,
     .keywords {
-        margin: 15px;
+        margin: 10px 10px;
         font-size: 11px;
     }
 
