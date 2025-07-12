@@ -12,7 +12,7 @@ export function renderRecentCard(card) {
 
     container.classList.add('card-container');
     frontContainer.classList.add('card');
-    img.src = `../assets/major-arcana/${card.id}.png`;
+    img.src = `/assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
 
     frontContainer.append(img, title);

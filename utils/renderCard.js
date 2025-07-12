@@ -2,7 +2,7 @@ const anchor = document.querySelector('section');
 
 /*
 renderCard takes a card object, and generates an HTML card with:
-a title (name), image, and an overlay div containing the card's keywords 
+a title (name), image, and an overlay div containing the card's keywords
 and indications
 */
 export function renderCard(card) {
@@ -13,9 +13,9 @@ export function renderCard(card) {
 
     container.classList.add('card-container');
     frontContainer.classList.add('card');
-    img.src = `../assets/major-arcana/${card.id}.png`;
+    img.src = `/assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
-    
+
     frontContainer.append(img, title);
     container.append(frontContainer);
 
