@@ -1,19 +1,19 @@
 {
     "rewrites": [
         {
-            "source": "/about-us/(.*)",
+            "source": "/about-us",
             "destination": "/about-us/index.html"
         },
         {
-            "source": "/about-tarot/(.*)",
+            "source": "/about-tarot",
             "destination": "/about-tarot/index.html"
         },
         {
-            "source": "/reading-room/(.*)",
+            "source": "/reading-room",
             "destination": "/reading-room/index.html"
         },
         {
-            "source": "/recent-cards/(.*)",
+            "source": "/recent-cards",
             "destination": "/recent-cards/index.html"
         }
     ],
