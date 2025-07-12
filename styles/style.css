@@ -22,7 +22,8 @@ header {
     text-decoration: underline;
 }
 
-button {
+.header-button, button {
+    vertical-align: center;
     background: #000000;
     transition: all 0.5s ease-in-out;
     color: white;
@@ -30,7 +31,7 @@ button {
     font-family: Hill House;
     border-style: hidden;
     margin: 4px;
-    padding: 8px 8px;
+    padding: 8px 8px 6px 8px;
     border-radius: 5px;
     font-size: 14px;
     display: flex;
@@ -58,10 +59,6 @@ button:hover {
         position: fixed;
     }
 
-    /* body {
-        padding-top: 120px;
-    } */
-
     .header-title {
         font-size: 28px;
     }
@@ -75,9 +72,9 @@ button:hover {
         padding-top: 6px;
     }
 
-    button {
+    .header-button {
         margin: 5px;
-        padding: 4px 8px;
+        padding: 6px 8px 4px 8px;
         font-size: 14px;
         display: flex;
         align-items: center;
@@ -115,9 +112,9 @@ button:hover {
         flex-wrap: wrap;
     }
 
-    button {
+    .header-button {
         margin: 4px 12px;
-        padding: 4px 4px;
+        padding: 6px 4px 3px 4px;
         font-size: 13px;
         width: auto;
         display: flex;
@@ -219,21 +216,15 @@ button:hover {
     position: relative;
 }
 
-.keywords {
+.keywords, .interpretation {
     font-family: 'Catamaran', sans-serif;
     font-weight: bolder;
-    line-height: 20px;
+    line-height: 18px;
     font-size: 12px;
     font-weight: 600;
 }
 
-.interpretation {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: bolder;
-    line-height: 20px;
-    font-size: 12px;
-    font-weight: 600;
-}
+
 
 .color-block {
     position: absolute;
@@ -255,37 +246,40 @@ button:hover {
 
 .interpretation,
 .keywords {
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 /* Card responsiveness - Tablet styles */
 @media screen and (max-width: 1024px) {
     .card > img,
-    .card-img {
-        height: 300px;
-        width: 171px;
+    .card-img, .color-block {
+        width: 180px;
+        height: 320px;
     }
 
     .card > div {
         width: 171px;
     }
 
-    .color-block {
-        width: 171px;
-        height: 300px;
-    }
 
     .card > p {
         width: 100px;
     }
+    .keywords, .interpretation {
+        font-family: 'Catamaran', sans-serif;
+        font-weight: bolder;
+        line-height: 15px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
 }
 
-/* Card responsiveness - Mobile styles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .card > img,
-    .card-img {
-        height: 250px;
-        width: 143px;
+     .card-img, .color-block {
+        height: 300px;
+        width: 171px;
         /* margin: 5px; */
     }
 
@@ -293,10 +287,27 @@ button:hover {
         width: 143px;
     }
 
+
+}
+
+
+/* Card responsiveness - Mobile styles */
+@media screen and (max-width: 516px) {
+    .card > img,
+     .card-img, .color-block {
+        height: 300px;
+        width: 171px;
+        /* margin: 5px; */
+    }
+
+    .card > div {
+        width: 143px;
+    }
+/*
     .color-block {
         width: 143px;
         height: 250px;
-    }
+    } */
 
     .card > p {
         width: 85px;

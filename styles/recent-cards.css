@@ -13,10 +13,7 @@ body {
     align-items: center;
 }
 
-.card, .card-container, .color-block, .card > img {
-    min-width: 204px;
-    min-height: 357px;
-}
+/* Card sizing is handled in style.css */
 
 .recent-cards-main {
     background-color: rgb(17, 17, 17);
@@ -38,10 +35,6 @@ body {
     .main-section {
         gap: 20px;
     }
-
-    /* .card-container {
-        margin-bottom: 25px;
-    } */
 }
 
 /* Mobile styles - below 768px */
@@ -55,11 +48,6 @@ body {
         align-items: center;
         gap: 15px;
     }
-
-    /* .card-container {
-        margin-bottom: 20px;
-        max-width: 100%;
-    } */
 
     .no-cards-message {
         padding-top: 20px;

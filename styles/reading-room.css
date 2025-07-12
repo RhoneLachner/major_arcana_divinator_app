@@ -29,6 +29,7 @@ body {
     color: white;
 }
 
+/* Reading room specific card animation */
 .card {
     opacity: 1;
     animation: opacity-fade 3s linear;
@@ -45,11 +46,6 @@ body {
     100% {
         opacity: 100%;
     }
-}
-.card, .card-container, .color-block, .card > img {
-    min-width: 204px;
-    min-height: 357px;
-    margin-top: 12px;
 }
 .description,
 .greet-user {
@@ -114,11 +110,6 @@ footer {
         margin-top: 120px;
     }
 
-    .card-back {
-        margin-left: 10px;
-        margin-bottom: -10px;
-    }
-
     .description,
     .greet-user {
         padding: 15px;
@@ -126,23 +117,18 @@ footer {
     }
 }
 
-/* Mobile styles - below 768px */
-@media screen and (max-width: 767px) {
+/* Small tablet styles - 516px to 768px - Keep horizontal layout */
+@media screen and (min-width: 634px) and (max-width: 768px) {
     .reading-room-main {
         padding: 0 10px;
         margin-top: 120px;
     }
 
     .main-section {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .card-back {
-        margin-left: 0;
-        margin-bottom: 0;
-        display: flex;
+        flex-direction: row;
         justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .description,
@@ -167,6 +153,40 @@ footer {
         height: 60px;
         margin: 5px;
     }
+}
 
+/* Mobile styles - below 516px - Vertical layout */
+@media screen and (max-width: 614px) {
+    .reading-room-main {
+        padding: 0 10px;
+        margin-top: 120px;
+    }
 
+    .main-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .description,
+    .greet-user {
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .click-instruction p {
+        font-size: 11px;
+    }
+
+    #card-desc {
+        font-size: 11px;
+        margin-top: 15px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    footer {
+        height: 60px;
+        margin: 5px;
+    }
 }

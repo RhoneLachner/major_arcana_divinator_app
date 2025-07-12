@@ -54,5 +54,11 @@ const deck = document.querySelector('.card-img.top');
 deck.addEventListener('click', onClick);
 
 refreshButton.addEventListener('click', () => {
-    window.location.reload();
+    // Scroll to top of page before reloading
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Small delay to allow smooth scroll to complete before reload
+    setTimeout(() => {
+        window.location.reload();
+    }, 300);
 });

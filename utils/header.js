@@ -51,40 +51,40 @@ function generateButtonsHTML(page) {
         case 'home':
             return `
                 <a href="${basePath}about-us/index.html">
-                    <button>About Us</button>
+                    <button class="header-button">About Us</button>
                 </a>
                 <a href="${basePath}about-tarot/index.html">
-                    <button>About Tarot</button>
+                    <button class="header-button">About Tarot</button>
                 </a>
                 <a href="${basePath}recent-cards/index.html">
-                    <button>Recent Cards</button>
+                    <button class="header-button">Recent Cards</button>
                 </a>
             `;
 
         case 'about-us':
             return `
                 <a href="${basePath}index.html">
-                    <button>Home</button>
+                    <button class="header-button">Home</button>
                 </a>
                 <a href="${basePath}recent-cards/index.html">
-                    <button>Recent Cards</button>
+                    <button class="header-button">Recent Cards</button>
                 </a>
             `;
 
         case 'about-tarot':
             return `
                 <a href="${basePath}index.html">
-                    <button>Home</button>
+                    <button class="header-button"></button>Home</buttonc>
                 </a>
             `;
 
         case 'recent-cards':
             return `
                 <a href="${basePath}index.html">
-                    <button>Home</button>
+                    <button class="header-button">Home</button>
                 </a>
                 <a>
-                    <button class="clear-button">Clear Saved Cards</button>
+                    <button class="header-button" class="clear-button">Clear Saved Cards</button>
                 </a>
             `;
 
@@ -94,14 +94,14 @@ function generateButtonsHTML(page) {
                     <button>Home</button>
                 </a>
                 <a href="${basePath}recent-cards/index.html">
-                    <button>Recent Cards</button>
+                    <button class="header-button">Recent Cards</button>
                 </a>
             `;
 
         default:
             return `
                 <a href="${basePath}index.html">
-                    <button>Home</button>
+                    <button class="header-button">Home</button>
                 </a>
             `;
     }
