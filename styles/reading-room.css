@@ -62,7 +62,7 @@ body {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
         sans-serif;
     color: #bba391cb;
-    font-size: 12px;
+    font-size: 0.8rem; /* Increased from 12px */
     margin: 0;
     text-align: center;
     opacity: 0;
@@ -77,7 +77,7 @@ body {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
         sans-serif;
     color: #bba391cb;
-    font-size: 12px;
+    font-size: 0.8rem; /* Increased from 12px */
     margin-top: 15px;
     margin-bottom: 0px;
 }
@@ -131,16 +131,16 @@ footer {
     .description,
     .greet-user {
         padding: 10px;
-        font-size: 13px;
+        font-size: 0.9rem; /* Increased from 13px */
         text-align: center;
     }
 
     .click-instruction p {
-        font-size: 11px;
+        font-size: 0.75rem; /* Increased from 11px */
     }
 
     #card-desc {
-        font-size: 11px;
+        font-size: 0.75rem; /* Increased from 11px */
         margin-top: 15px;
         text-align: center;
         padding: 0 10px;

@@ -18,7 +18,7 @@ header {
     color: rgb(255, 255, 255);
     background-color: black;
     text-align: center;
-    font-size: 52px;
+    font-size: 3.2rem; /* Increased from 52px */
     font-weight: 600;
     padding-top: 24px;
     padding-bottom: 6px;
@@ -31,7 +31,7 @@ header {
 }
 
 .header-title {
-    font-size: 30px;
+    font-size: 2.1rem; /* Increased from 34px */
     font-weight: 600;
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ button {
     margin: 4px;
     padding: 8px 8px 6px 8px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1rem; /* Increased from 14px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,17 +68,17 @@ button:hover {
 /* Tablet header styles - 768px to 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-        font-size: 38px;
+        font-size: 2.4rem; /* Increased from 38px */
         padding-top: 24px;
         position: fixed;
     }
 
     .header-title {
-        font-size: 28px;
+        font-size: 1.8rem; /* Increased from 28px */
     }
 
     .buttonDiv {
-        font-size: 14px;
+        font-size: 1rem; /* Increased from 14px */
     }
 
     .buttonSpan {
@@ -89,7 +89,7 @@ button:hover {
     .header-button {
         margin: 5px;
         padding: 6px 8px 4px 8px;
-        font-size: 14px;
+        font-size: 1rem; /* Increased from 14px */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -100,13 +100,13 @@ button:hover {
 /* Mobile header styles - below 768px */
 @media screen and (max-width: 767px) {
     header {
-        font-size: 24px;
+        font-size: 1.6rem; /* Increased from 24px */
         padding-top: 24px;
         position: fixed;
     }
 
     .header-title {
-        font-size: 24px;
+        font-size: 1.5rem; /* Increased from 24px */
     }
 
     .buttonDiv {
@@ -128,7 +128,7 @@ button:hover {
     .header-button {
         margin: 4px 12px;
         padding: 6px 4px 3px 4px;
-        font-size: 13px;
+        font-size: 0.9rem; /* Increased from 13px */
         width: auto;
         display: flex;
         align-items: center;
@@ -233,7 +233,7 @@ button:hover {
     font-family: 'Catamaran', sans-serif;
     font-weight: bolder;
     line-height: 18px;
-    font-size: 12px;
+    font-size: 0.8rem; /* Increased from 12px */
     font-weight: 600;
 }
 

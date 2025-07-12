@@ -64,7 +64,7 @@ input[type='radio']:checked + div > p {
     vertical-align: center;
     background-color: rgb(17, 17, 17);
     margin-top: 12px;
-    font-size: 16px;
+    font-size: 1.1rem; /* Increased from 16px */
     padding: 12px 10px 8px 10px;
     border-radius: 12px;
 }
@@ -80,7 +80,7 @@ input[type='radio']:checked + div > p {
 }
 
 img {
-    height: 200px;
+    height: 240px; /* Increased from 200px */
     width: auto;
     border-radius: 12px;
     margin: 10px;
@@ -98,18 +98,20 @@ input[type='radio']:checked + div > img {
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana,
         sans-serif;
     /* margin-top: 30px; */
-    font-size: 15px;
+    font-size: 1rem; /* Increased from 15px */
     text-align: center;
     color: gray;
 }
 #firstLine {
-    font-size: 15px;
+    font-size: 1.09rem; /* Increased from 15px */
     color: #bba391cb;
 }
 
 #secondLine {
-    font-size: 11px;
+    font-size: 1rem; /* Increased from 11px */
     color: #bba3919f;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 /* Default desktop styles for card selection */
@@ -131,6 +133,12 @@ label div {
 
 /* Tablet styles - 768px to 1024px */
 @media screen and (max-width: 1024px) {
+
+    #secondLine {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
     .home-main {
         padding-top: 180px; /* Account for desktop header height */
     }
@@ -141,7 +149,7 @@ label div {
     }
 
     img {
-        height: 180px;
+        height: 220px; /* Increased from 180px */
         width: auto;
     }
 
@@ -162,7 +170,7 @@ label div {
     }
 
     img {
-        height: 140px;
+        height: 170px; /* Increased from 140px */
         width: auto;
         margin: 5px;
     }
@@ -177,14 +185,17 @@ label div {
 
     .instructions {
         /* margin-top: 20px; */
-        font-size: 14px;
+        font-size: 0.95rem; /* Increased from 14px */
     }
 
     #firstLine {
-        font-size: 14px;
+        font-size: 1.05rem; /* Increased from 14px */
     }
 
     #secondLine {
-        font-size: 10px;
+        font-size: .88rem; /* Increased from 10p
+        x */
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

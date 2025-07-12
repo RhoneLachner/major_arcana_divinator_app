@@ -1,1 +1,0 @@
-import{r as t}from"./header-C588g6rX.js";import{s as o,O as r}from"./localStorage-utils-_Sjt_ShB.js";t();const n=document.getElementById("beginButton");n.addEventListener("click",()=>{const e=document.querySelector(":checked");o(r,e.value)});
