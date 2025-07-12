@@ -50,9 +50,6 @@ function generateButtonsHTML(page) {
     switch (page) {
         case 'home':
             return `
-                <a href="${basePath}about-us/index.html">
-                    <button class="header-button">About Us</button>
-                </a>
                 <a href="${basePath}about-tarot/index.html">
                     <button class="header-button">About Tarot</button>
                 </a>
@@ -74,7 +71,7 @@ function generateButtonsHTML(page) {
         case 'about-tarot':
             return `
                 <a href="${basePath}index.html">
-                    <button class="header-button"></button>Home</buttonc>
+                    <button class="header-button">Home</buttonc>
                 </a>
             `;
 

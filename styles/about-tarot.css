@@ -38,6 +38,19 @@ a:visited {
     text-decoration: none;
 }
 
+/* Override for header button colors - ensure they stay white */
+.buttonSpan a:link,
+.buttonSpan a:hover,
+.buttonSpan a:visited,
+.buttonSpan a:active {
+    color: white !important;
+}
+
+.buttonSpan button,
+.buttonSpan a button {
+    color: white !important;
+}
+
 body {
     background-color: rgb(17, 17, 17);
     color: white;
@@ -89,11 +102,10 @@ img {
 
 /* Mobile styles - below 768px */
 @media screen and (max-width: 767px) {
-
     .main-about-tarot-section {
         margin-top: 130px;
     }
-    
+
     .tarot-info-title {
         padding-bottom: 45px;
     }
